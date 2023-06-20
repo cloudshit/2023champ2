@@ -1,0 +1,9 @@
+{
+  "firehose.endpoint": "https://firehose.ap-northeast-2.amazonaws.com",
+  "flows": [
+    { 
+      "filePattern": "/var/log/mykinesis/*.log", 
+      "deliveryStream": "dev-skills-firehose"
+    }
+  ] 
+} 

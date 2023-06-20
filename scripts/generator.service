@@ -1,0 +1,13 @@
+[Unit]
+Description=generator
+
+StartLimitIntervalSec=500
+StartLimitBurst=5
+
+[Service]
+Restart=on-failure
+RestartSec=5s
+ExecStart=/opt/script/generator.sh
+
+[Install]
+WantedBy=multi-user.target
